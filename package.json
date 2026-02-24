@@ -1,28 +1,30 @@
 {
-  "name": "neura-mine-dex",
+  "name": "neura-mine-dex-frontend",
+  "private": true,
   "version": "1.0.0",
-  "description": "DEX and Prediction Market on Neura Testnet",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "compile": "hardhat compile",
-    "test": "hardhat test",
-    "deploy": "hardhat run scripts/deploy.ts --network neuraTestnet",
-    "create-pairs": "hardhat run scripts/create-pairs.ts --network neuraTestnet",
-    "set-prices": "hardhat run scripts/set-prices.ts --network neuraTestnet"
-  },
-  "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "@typechain/ethers-v6": "^0.5.1",
-    "@typechain/hardhat": "^9.1.0",
-    "@types/node": "^20.11.5",
-    "dotenv": "^16.4.5",
-    "hardhat": "^2.22.6",
-    "ts-node": "^10.9.2",
-    "typechain": "^8.3.2",
-    "typescript": "^5.3.3"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^5.4.0",
-    "ethers": "^6.13.1"
+    "ethers": "^6.13.1",
+    "lucide-react": "^0.344.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-qr-code": "^2.0.18",
+    "react-router-dom": "^6.22.0",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.2"
   }
 }
