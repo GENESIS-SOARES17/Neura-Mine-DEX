@@ -1,0 +1,28 @@
+{
+  "name": "neura-mine-dex",
+  "version": "1.0.0",
+  "description": "DEX and Prediction Market on Neura Testnet",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts --network neuraTestnet",
+    "create-pairs": "hardhat run scripts/create-pairs.ts --network neuraTestnet",
+    "set-prices": "hardhat run scripts/set-prices.ts --network neuraTestnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/node": "^20.11.5",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.6",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "ethers": "^6.13.1"
+  }
+}
